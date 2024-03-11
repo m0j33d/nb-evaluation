@@ -32,15 +32,15 @@ This is a simple microservices setup for users and notifications. The users serv
         "email": "johndoe@example.com"
   }
     ```
+- Done! Check DB for the user created and `/var/www/nb/notificationService/var/log/users.log` for the notification service created user event log
 
 ### Unit, Integration and Functional Tests
 - To run Tests run the following commands
-    - For the User service tests run `docker exec -t php sh -c "cd /var/www/nb/users-service && ./vendor/bin/phpunit"`
-    - For the Notification service tests run `docker exec -t php sh -c "cd /var/www/nb/notifications-service && ./vendor/bin/phpunit"`
+    - For the User service tests run `docker exec -t php sh -c "cd /var/www/nb/userService && ./vendor/bin/phpunit"`
+    - For the Notification service tests run `docker exec -t php sh -c "cd /var/www/nb/notificationService && ./vendor/bin/phpunit"`
 
 ### Project Requirements and Details
 - [x] Total TestCases : **18**
-- [x] Implemented DDD (Domain Driven Design) and CQRS (Command Query Responsibility Segregation) patterns
-- [x] Implemented SOLID principles
+- [x] Made use of DDD (Domain Driven Design) and CQRS (Command Query Responsibility Segregation) patterns
 - [x] Project is fully dockerized
 - [x] Works 100% as requested  ✅✅
